@@ -10,8 +10,8 @@ The objective is not to build another general-purpose agent. It is to build the 
 
 | C.I. | Capability | Status |
 |---|---|---|
-| #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | LIVE · Apify |
-| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | LIVE · Apify |
+| #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [LIVE · Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
+| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -33,7 +33,7 @@ C.I. Factory targets missing infrastructure between autonomous agents and reliab
 
 Start with the two deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
 
-Direct Apify Store links will be attached to each capability page once their canonical public URLs are recorded.
+Both deployed capabilities can be opened and run directly on Apify from the links above.
 
 ---
 

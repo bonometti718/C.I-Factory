@@ -10,8 +10,8 @@ The objective is not to build another general-purpose agent. It is to build the 
 
 | C.I. | Capability | Status |
 |---|---|---|
-| #01 | Citation Remediation Payload Generator | LIVE · Apify |
-| #02 | Agent Economic Action Gate | LIVE · Apify |
+| #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | LIVE · Apify |
+| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | LIVE · Apify |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 

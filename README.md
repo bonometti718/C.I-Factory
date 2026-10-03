@@ -25,26 +25,6 @@ The objective is not to build another general-purpose agent. It is to build the 
 - Thin adapters for deployment surfaces
 - Versioned contracts and reproducible tests
 
-## Architecture
-
-```text
-                 C.I. FACTORY
-                      |
-        +-------------+-------------+
-        |             |             |
-   Capability     Capability    Capability
-      Core           Core          Core
-        |             |             |
-        +------ Adapter Layer ------+
-                      |
-        +-------------+-------------+
-        |             |             |
-      Apify          APIs          MCP
-                                   / x402
-```
-
-Each capability should remain useful independently of any single marketplace or distribution channel.
-
 ## Current Focus
 
 The project is exploring infrastructure bottlenecks that become more important as agents gain greater autonomy, especially where execution requires deterministic controls, evidence, economic boundaries, and reliable state handling.

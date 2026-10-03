@@ -25,13 +25,15 @@ The objective is not to build another general-purpose agent. It is to build the 
 - Thin adapters for deployment surfaces
 - Versioned contracts and reproducible tests
 
-## Current Focus
+## What We Build
 
-The project is exploring infrastructure bottlenecks that become more important as agents gain greater autonomy, especially where execution requires deterministic controls, evidence, economic boundaries, and reliable state handling.
+C.I. Factory targets missing infrastructure between autonomous agents and reliable real-world execution: small, machine-native capabilities with explicit contracts and verifiable outputs.
 
-## Repository Strategy
+## Explore the Live Capabilities
 
-This repository is the public index and technical map of C.I. Factory. Individual capabilities may have separate repositories, demos, APIs, or marketplace deployments. Proprietary implementation details do not need to live in this repository.
+Start with the two deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
+
+Direct Apify Store links will be attached to each capability page once their canonical public URLs are recorded.
 
 ---
 

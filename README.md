@@ -23,7 +23,7 @@ Send a JSON `POST` request to evaluate whether an agent should buy an action ver
 
 Opening the link in a browser sends GET and does not run an evaluation. See the [request example and usage instructions](capabilities/CI-002.md#direct-api-access-x402).
 
-The endpoint passed Coinbase's x402 discovery validator. **Real payment settlement and Bazaar indexing have not yet been verified.**
+
 ## Design Principles
 
 - Machine-native inputs and outputs

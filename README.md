@@ -15,6 +15,15 @@ The objective is not to build another general-purpose agent. It is to build the 
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
+## Use C.I. #02 via x402
+
+**[Agent Economic Action Gate - paid API endpoint](https://ci-002-production.up.railway.app/x402/v1/evaluate)**
+
+Send a JSON `POST` request to evaluate whether an agent should buy an action versus its baseline and alternatives. Price: **0.001 USDC per evaluation on Base mainnet**. An unpaid valid request returns `402 Payment Required`; an x402-compatible client can sign the payment authorization and retry to receive the result.
+
+Opening the link in a browser sends GET and does not run an evaluation. See the [request example and usage instructions](capabilities/CI-002.md#direct-api-access-x402).
+
+The endpoint passed Coinbase's x402 discovery validator. **Real payment settlement and Bazaar indexing have not yet been verified.**
 ## Design Principles
 
 - Machine-native inputs and outputs

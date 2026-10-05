@@ -11,7 +11,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | C.I. | Capability | Status |
 |---|---|---|
 | #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [LIVE · Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
-| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) |
+| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -23,6 +23,11 @@ Send a JSON `POST` request to evaluate whether an agent should buy an action ver
 
 Opening the link in a browser sends GET and does not run an evaluation. See the [request example and usage instructions](capabilities/CI-002.md#direct-api-access-x402).
 
+## Use C.I. #02 via RapidAPI
+
+[Open Agent Economic Action Gate on RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3). Send JSON to `POST /rapidapi/v1/evaluate` using your RapidAPI application key. **Pay per use: $0.002 per request, with no monthly subscription fee.** RapidAPI platform bandwidth fees may also apply.
+
+The gateway integration was tested successfully: HTTP `200 OK`, decision `BUY`, and `max_rational_price: 7` for the documented example. See the [capability documentation](capabilities/CI-002.md) for inputs and operational boundaries.
 
 ## Design Principles
 
@@ -42,7 +47,7 @@ C.I. Factory targets missing infrastructure between autonomous agents and reliab
 
 Start with the two deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
 
-Both deployed capabilities can be opened and run directly on Apify from the links above.
+Both deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
 
 ---
 

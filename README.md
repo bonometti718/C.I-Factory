@@ -27,6 +27,14 @@ Useful for generative engine optimization (GEO), answer engine optimization (AEO
 
 [**Start here: complete JSON input, Apify quickstart, and cURL API example**](capabilities/CI-001.md). One target page, one competitor, and one query per run.
 
+## Decide whether an agent should pay with C.I. #02
+
+**Problem:** an agent can buy a tool call or verification step, but must compare its expected benefit with its price, baseline, and available substitutes.
+
+[**Agent Economic Action Gate**](capabilities/CI-002.md) provides deterministic expected-value comparison, a `BUY` / `SKIP` / `STOP` / `ESCALATE` decision, and a maximum rational price from caller-supplied estimates. Useful for AI agent cost control, tool-call economics, and paid capability selection. It does not execute purchases or estimate success probabilities.
+
+**Verified example:** a USD 3 verifier returns `BUY`, a USD 7 price ceiling, and USD 4 modeled advantage over the best substitute. [Complete JSON input and API quickstarts for Apify, RapidAPI, and x402](capabilities/CI-002.md).
+
 ## Use C.I. #02 via x402
 
 **[Agent Economic Action Gate - paid API endpoint](https://ci-002-production.up.railway.app/x402/v1/evaluate)**

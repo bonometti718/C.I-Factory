@@ -1,6 +1,8 @@
 # Capability Infrastructure Factory
 
-**Building machine-native infrastructure for autonomous AI agents.**
+**Deterministic tools for AI citation remediation and autonomous agent decisions.**
+
+Turn supplied AI citation evidence into HTML and JSON-LD remediation plans, or evaluate whether an agent action is worth its cost. Explore the live capabilities below and run them through their marketplace APIs.
 
 C.I. Factory is an engineering project focused on identifying emerging infrastructure gaps in agentic systems and turning them into small, deterministic, verifiable capabilities.
 
@@ -14,6 +16,16 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
+
+## Fix an AI citation gap with C.I. #01
+
+**Problem:** an AI answer cites a competitor and omits your page, while the relevant facts already exist in your HTML.
+
+[**Citation Remediation Payload Generator — run on Apify**](https://apify.com/bono718/citation-remediation-payload-generator) turns supplied citation evidence, target and competitor HTML snapshots, and grounded facts into deterministic remediation instructions. Outputs include proposed HTML additions, WebPage JSON-LD, snapshot checks, and typed acceptance tests. Your own adapter reviews and applies the changes.
+
+Useful for generative engine optimization (GEO), answer engine optimization (AEO), AI search visibility, and agent-driven content maintenance workflows that already collect citation evidence. It does not collect live citations or guarantee citation uplift.
+
+[**Start here: complete JSON input, Apify quickstart, and cURL API example**](capabilities/CI-001.md). One target page, one competitor, and one query per run.
 
 ## Use C.I. #02 via x402
 

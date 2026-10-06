@@ -72,3 +72,8 @@ Both deployed capabilities can be opened and run directly on Apify from the link
 ---
 
 **C.I. Factory** · Capability Infrastructure for autonomous systems
+
+
+## Contact
+
+For integration questions and feedback: [alessandrobonometti.workai@gmail.com](mailto:alessandrobonometti.workai@gmail.com).

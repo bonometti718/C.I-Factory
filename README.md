@@ -76,4 +76,4 @@ Both deployed capabilities can be opened and run directly on Apify from the link
 
 ## Contact
 
-For integration questions and feedback: [alessandrobonometti.workai@gmail.com](mailto:alessandrobonometti.workai@gmail.com).
+For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bonometti.work.AI@gmail.com).

@@ -15,6 +15,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [LIVE · Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
 | #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
 | #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [LIVE - Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) · [x402 endpoint](https://ci-002-production.up.railway.app/ci003/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-evidence-sufficiency-engine) |
+| #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -82,3 +83,11 @@ All three deployed capabilities can be opened and run directly on Apify from the
 ## Contact
 
 For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bonometti.work.AI@gmail.com).
+
+## Reconcile conflicting states with C.I. #04
+
+**Problem:** several systems report incompatible values for the same entity, and an agent needs an explicit, auditable decision before acting.
+
+[Agent State Conflict Resolver](capabilities/CI-004.md) applies per-field source authority, freshness and declared invariants. It returns a canonical state under that policy or escalates unresolved conflicts. Review-only patches never write to external systems.
+
+[Worked JSON demo and failure cases](CI-004-demo.md).

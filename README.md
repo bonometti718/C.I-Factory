@@ -18,7 +18,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) |
 | #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [LIVE - Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-capability-substitution-resolver) |
 | #06 | [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) | [LIVE - Apify](https://apify.com/bono718/agent-future-obligation-exposure-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci006/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-future-obligation-exposure-resolver) |
-| #07 | [Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) | [LIVE - Apify](https://apify.com/bono718/agent-invariant-coverage-gap-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci007/x402/v1/evaluate) |
+| #07 | [Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) | [LIVE - Apify](https://apify.com/bono718/agent-invariant-coverage-gap-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci007/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-invariant-coverage-gap-resolver) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 

@@ -17,6 +17,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [LIVE - Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) · [x402 endpoint](https://ci-002-production.up.railway.app/ci003/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-evidence-sufficiency-engine) |
 | #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) |
 | #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [LIVE - Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-capability-substitution-resolver) |
+| #06 | [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) | [LIVE - Apify](https://apify.com/bono718/agent-future-obligation-exposure-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci006/x402/v1/evaluate) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -72,9 +73,9 @@ C.I. Factory targets missing infrastructure between autonomous agents and reliab
 
 ## Explore the Live Capabilities
 
-Start with the three deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
+Explore the deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
 
-All three deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
+The deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
 
 ---
 
@@ -100,3 +101,11 @@ For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bon
 [Agent Capability Substitution Resolver](capabilities/CI-005.md) compares supported schema guarantees, declared semantic identifiers, allowed effects and supplied paired fixtures. It distinguishes direct substitution, adapter work, required tests, insufficient evidence and incompatibility.
 
 [Worked JSON demo and failure cases](CI-005-demo.md).
+
+## Assess future liabilities with C.I. #06
+
+**Problem:** an agent sees a small immediate price but may also create renewals, deferred charges, cancellation penalties or hold liquidity requirements.
+
+[Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) separates cash now, unavoidable commitments, conditional liability, expected continuing scenario, maximum future exposure and a conservative reserve. Unknown or uncapped liability stays unknown. Structured caller terms only; no contract interpretation or payment execution.
+
+[Worked JSON demo and boundary cases](CI-006-demo.md).

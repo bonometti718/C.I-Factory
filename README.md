@@ -14,6 +14,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 |---|---|---|
 | #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [LIVE · Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
 | #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
+| #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [LIVE - Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -49,6 +50,10 @@ Opening the link in a browser sends GET and does not run an evaluation. See the 
 
 The gateway integration was tested successfully: HTTP `200 OK`, decision `BUY`, and `max_rational_price: 7` for the documented example. See the [capability documentation](capabilities/CI-002.md) for inputs and operational boundaries.
 
+## Check evidence sufficiency with C.I. #03
+
+[Agent Evidence Sufficiency Engine](capabilities/CI-003.md) checks whether supplied structured observations satisfy explicit source-count, source-type, freshness, provenance-reference and confidence requirements. It returns SUPPORTED, CONTRADICTED or INSUFFICIENT with auditable reasons. Exact JSON-value comparison; no semantic fact-checking or independent source authentication. [Worked JSON demo](CI-003-demo.md).
+
 ## Design Principles
 
 - Machine-native inputs and outputs
@@ -65,9 +70,9 @@ C.I. Factory targets missing infrastructure between autonomous agents and reliab
 
 ## Explore the Live Capabilities
 
-Start with the two deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
+Start with the three deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
 
-Both deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
+All three deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
 
 ---
 

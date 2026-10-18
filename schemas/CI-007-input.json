@@ -1,0 +1,359 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "graph": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 250,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "agent",
+                  "effect"
+                ]
+              },
+              "repeatable": {
+                "type": "boolean",
+                "description": "Effect nodes only; declares multi-action applicable outside RETRY."
+              }
+            },
+            "required": [
+              "id",
+              "type"
+            ]
+          }
+        },
+        "edges": {
+          "type": "array",
+          "maxItems": 2000,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "from": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "to": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "DIRECT",
+                  "DELEGATED",
+                  "RETRY"
+                ]
+              }
+            },
+            "required": [
+              "from",
+              "to",
+              "mode"
+            ]
+          }
+        },
+        "entrypoints": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 250,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        }
+      },
+      "required": [
+        "nodes",
+        "edges"
+      ]
+    },
+    "invariants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "operator": {
+                "type": "string",
+                "enum": [
+                  "BOUND"
+                ]
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "comparison": {
+                "type": "string",
+                "enum": [
+                  "<=",
+                  "<",
+                  ">=",
+                  ">"
+                ]
+              },
+              "value": {
+                "type": "number"
+              },
+              "scope": {
+                "type": "string",
+                "enum": [
+                  "single",
+                  "cumulative"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "effect",
+              "operator",
+              "field",
+              "comparison",
+              "value"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "operator": {
+                "type": "string",
+                "enum": [
+                  "MEMBERSHIP"
+                ]
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "comparison": {
+                "type": "string",
+                "enum": [
+                  "IN",
+                  "NOT_IN"
+                ]
+              },
+              "values": {
+                "type": "array",
+                "maxItems": 100,
+                "items": {
+                  "description": "JSON scalar: string, finite number, boolean or null."
+                }
+              }
+            },
+            "required": [
+              "id",
+              "effect",
+              "operator",
+              "field",
+              "comparison",
+              "values"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "operator": {
+                "type": "string",
+                "enum": [
+                  "CARDINALITY"
+                ]
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "comparison": {
+                "type": "string",
+                "enum": [
+                  "<="
+                ]
+              },
+              "value": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740990
+              }
+            },
+            "required": [
+              "id",
+              "effect",
+              "operator",
+              "field",
+              "comparison",
+              "value"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "effect": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "operator": {
+                "type": "string",
+                "enum": [
+                  "SEQUENCE"
+                ]
+              },
+              "before": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "after": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 200
+              },
+              "comparison": {
+                "type": "string",
+                "enum": [
+                  "BEFORE"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "effect",
+              "operator",
+              "before",
+              "after",
+              "comparison"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "invariant_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "invariant_signature": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$",
+            "description": "Exact signature returned for the normalized invariant under ci007-dag-v1."
+          },
+          "surface": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "DIRECT",
+              "DELEGATED",
+              "RETRY"
+            ]
+          },
+          "condition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          },
+          "witness_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "required": [
+          "invariant_id",
+          "invariant_signature",
+          "surface",
+          "mode",
+          "condition",
+          "result",
+          "witness_id"
+        ]
+      }
+    }
+  },
+  "required": [
+    "graph",
+    "invariants",
+    "evidence"
+  ]
+}

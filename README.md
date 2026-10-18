@@ -18,6 +18,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) |
 | #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [LIVE - Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-capability-substitution-resolver) |
 | #06 | [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) | [LIVE - Apify](https://apify.com/bono718/agent-future-obligation-exposure-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci006/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-future-obligation-exposure-resolver) |
+| #07 | [Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) | [LIVE - Apify](https://apify.com/bono718/agent-invariant-coverage-gap-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci007/x402/v1/evaluate) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -109,3 +110,11 @@ For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bon
 [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) separates cash now, unavoidable commitments, conditional liability, expected continuing scenario, maximum future exposure and a conservative reserve. Unknown or uncapped liability stays unknown. Structured caller terms only; no contract interpretation or payment execution.
 
 [Worked JSON demo and boundary cases](CI-006-demo.md).
+
+## Find verification gaps with C.I. #07
+
+**Problem:** passing tests for a direct agent action do not show whether delegated, retry or cumulative paths have been checked.
+
+[Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) projects structured invariants onto reachable graph paths, matches current-signature evidence and returns covered, missing, unreachable and conflicting obligations. It does not generate or execute tests or certify an agent as safe.
+
+[Complete JSON demo and mutation cases](CI-007-demo.md).

@@ -16,6 +16,7 @@ The objective is not to build another general-purpose agent. It is to build the 
 | #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
 | #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [LIVE - Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) · [x402 endpoint](https://ci-002-production.up.railway.app/ci003/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-evidence-sufficiency-engine) |
 | #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) |
+| #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [LIVE - Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) |
 
 > The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
 
@@ -91,3 +92,11 @@ For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bon
 [Agent State Conflict Resolver](capabilities/CI-004.md) applies per-field source authority, freshness and declared invariants. It returns a canonical state under that policy or escalates unresolved conflicts. Review-only patches never write to external systems.
 
 [Worked JSON demo and failure cases](CI-004-demo.md).
+
+## Assess a tool replacement with C.I. #05
+
+**Problem:** an agent has a candidate provider, but matching API shapes alone do not establish that switching preserves the task contract.
+
+[Agent Capability Substitution Resolver](capabilities/CI-005.md) compares supported schema guarantees, declared semantic identifiers, allowed effects and supplied paired fixtures. It distinguishes direct substitution, adapter work, required tests, insufficient evidence and incompatibility.
+
+[Worked JSON demo and failure cases](CI-005-demo.md).

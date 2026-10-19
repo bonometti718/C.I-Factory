@@ -1,118 +1,124 @@
-# Capability Infrastructure Factory
+# C.I. FACTORY — Capability Infrastructure Factory
 
-**Explore the live capabilities below and run them through their marketplace APIs.
+**From missing digital capabilities to small, deployable software components.**
 
-C.I. Factory is an engineering project focused on identifying emerging infrastructure gaps in agentic systems and turning them into small, deterministic, verifiable capabilities.
+C.I. FACTORY is an independent software capability factory. We look for specific infrastructure gaps in existing and emerging digital ecosystems, define the smallest useful capability that fills each gap, and build reusable components with explicit interfaces and verifiable behavior.
 
-The objective is not to build another general-purpose agent. It is to build the infrastructure autonomous agents need around execution: verification, economic control, state consistency, remediation, and other machine-native primitives.
+**The Factory is not a single Actor, API, or AI product.** It is the engineering process and growing portfolio behind independently usable capabilities. Our first deployments focus on AI search and agent infrastructure, but the model also applies to developer tools, automation, social platforms, data workflows, and future ecosystems.
 
-## Capability Portfolio
+[Explore the capability catalog](#capability-catalog) · [How we work](#how-the-factory-works) · [Integration](#integrate-a-capability) · [Contact](#contact)
 
-| C.I. | Capability | Status |
-|---|---|---|
-| #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [LIVE · Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
-| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [LIVE · Apify](https://apify.com/bono718/agent-economic-action-gate) · [LIVE · Railway](https://ci-002-production.up.railway.app/health) · [LIVE · RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) |
-| #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [LIVE - Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) · [x402 endpoint](https://ci-002-production.up.railway.app/ci003/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-evidence-sufficiency-engine) |
-| #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [LIVE - Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) |
-| #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [LIVE - Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-capability-substitution-resolver) |
-| #06 | [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) | [LIVE - Apify](https://apify.com/bono718/agent-future-obligation-exposure-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci006/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-future-obligation-exposure-resolver) |
-| #07 | [Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) | [LIVE - Apify](https://apify.com/bono718/agent-invariant-coverage-gap-resolver) · [x402 endpoint](https://ci-002-production.up.railway.app/ci007/x402/v1/evaluate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-invariant-coverage-gap-resolver) |
+## How the Factory works
 
-> The public portfolio lists only capabilities that have been deployed. New C.I.s are added here after deployment is verified.
+1. **Scout:** identify an underserved, concrete software need.
+2. **Define:** specify one narrow machine-readable input/output contract and clear limits.
+3. **Build:** implement a lightweight, low-marginal-cost capability.
+4. **Verify:** test supported cases, edge cases and failure modes with reproducible examples.
+5. **Distribute:** publish suitable integrations through Actors, APIs or developer marketplaces.
+6. **Iterate:** prioritize improvements based on real integration feedback and adoption.
 
-## Fix an AI citation gap with C.I. #01
+The goal is not to accumulate features or listings for their own sake. Each capability must solve a distinct problem and be independently useful to developers and integrators.
 
-**Problem:** an AI answer cites a competitor and omits your page, while the relevant facts already exist in your HTML.
+## Capability catalog
 
-[**Citation Remediation Payload Generator — run on Apify**](https://apify.com/bono718/citation-remediation-payload-generator) turns supplied citation evidence, target and competitor HTML snapshots, and grounded facts into deterministic remediation instructions. Outputs include proposed HTML additions, WebPage JSON-LD, snapshot checks, and typed acceptance tests. Your own adapter reviews and applies the changes.
+The repository currently documents **seven deployed capabilities**. Each has its own technical documentation; marketplace and API links are listed separately below.
 
-Useful for generative engine optimization (GEO), answer engine optimization (AEO), AI search visibility, and agent-driven content maintenance workflows that already collect citation evidence. It does not collect live citations or guarantee citation uplift.
+| C.I. | Capability | Distribution |
+| --- | --- | --- |
+| #01 | [Citation Remediation Payload Generator](capabilities/CI-001.md) | [Apify](https://apify.com/bono718/citation-remediation-payload-generator) |
+| #02 | [Agent Economic Action Gate](capabilities/CI-002.md) | [Apify](https://apify.com/bono718/agent-economic-action-gate) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3) · [x402](https://ci-002-production.up.railway.app/x402/v1/evaluate) |
+| #03 | [Agent Evidence Sufficiency Engine](capabilities/CI-003.md) | [Apify](https://apify.com/bono718/agent-evidence-sufficiency-engine) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-evidence-sufficiency-engine) · [x402](https://ci-002-production.up.railway.app/ci003/x402/v1/evaluate) |
+| #04 | [Agent State Conflict Resolver](capabilities/CI-004.md) | [Apify](https://apify.com/bono718/agent-state-conflict-resolver) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-state-conflict-resolver) · [x402](https://ci-002-production.up.railway.app/ci004/x402/v1/evaluate) |
+| #05 | [Agent Capability Substitution Resolver](capabilities/CI-005.md) | [Apify](https://apify.com/bono718/agent-capability-substitution-resolver) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-capability-substitution-resolver) · [x402](https://ci-002-production.up.railway.app/ci005/x402/v1/evaluate) |
+| #06 | [Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) | [Apify](https://apify.com/bono718/agent-future-obligation-exposure-resolver) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-future-obligation-exposure-resolver) · [x402](https://ci-002-production.up.railway.app/ci006/x402/v1/evaluate) |
+| #07 | [Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) | [Apify](https://apify.com/bono718/agent-invariant-coverage-gap-resolver) · [RapidAPI](https://rapidapi.com/bono71822/api/agent-invariant-coverage-gap-resolver) · [x402](https://ci-002-production.up.railway.app/ci007/x402/v1/evaluate) |
 
-[**Start here: complete JSON input, Apify quickstart, and cURL API example**](capabilities/CI-001.md). One target page, one competitor, and one query per run.
+> **Distribution note:** Links reflect published integrations documented in this repository. Different channels may have different access requirements, pricing and endpoint semantics. Publication does not establish usage, customer demand or revenue. New capabilities are added to this public catalog after their deployment has been verified.
 
-## Decide whether an agent should pay with C.I. #02
+## What each capability does
 
-**Problem:** an agent can buy a tool call or verification step, but must compare its expected benefit with its price, baseline, and available substitutes.
+### C.I. #01 — Citation Remediation Payload Generator
 
-[**Agent Economic Action Gate**](capabilities/CI-002.md) provides deterministic expected-value comparison, a `BUY` / `SKIP` / `STOP` / `ESCALATE` decision, and a maximum rational price from caller-supplied estimates. Useful for AI agent cost control, tool-call economics, and paid capability selection. It does not execute purchases or estimate success probabilities.
+**Problem:** an AI answer cites another website and overlooks a relevant target page even when the supplied HTML contains usable facts.
 
-**Verified example:** a USD 3 verifier returns `BUY`, a USD 7 price ceiling, and USD 4 modeled advantage over the best substitute. [Complete JSON input and API quickstarts for Apify, RapidAPI, and x402](capabilities/CI-002.md).
+Given citation evidence, target and competitor HTML snapshots, and grounded facts, this component produces deterministic remediation instructions: proposed HTML additions, WebPage JSON-LD, snapshot checks and typed acceptance tests. An external adapter reviews and applies changes. It does **not** collect live citations or guarantee better search visibility.
 
-## Use C.I. #02 via x402
+[Input schema, example and Apify quickstart](capabilities/CI-001.md) · [Worked demo](CI-001-demo.md)
 
-**[Agent Economic Action Gate - paid API endpoint](https://ci-002-production.up.railway.app/x402/v1/evaluate)**
+### C.I. #02 — Agent Economic Action Gate
 
-Send a JSON `POST` request to evaluate whether an agent should buy an action versus its baseline and alternatives. Price: **0.001 USDC per evaluation on Base mainnet**. An unpaid valid request returns `402 Payment Required`; an x402-compatible client can sign the payment authorization and retry to receive the result.
+**Problem:** an agent needs to decide whether to pay for a tool call or verification action rather than use a baseline or substitute.
 
-Opening the link in a browser sends GET and does not run an evaluation. See the [request example and usage instructions](capabilities/CI-002.md#direct-api-access-x402).
+Compares caller-supplied expected values and costs, returning a deterministic `BUY`, `SKIP`, `STOP` or `ESCALATE` result, a modeled advantage and a maximum rational price. It does **not** execute purchases or estimate unknown success probabilities.
 
-## Use C.I. #02 via RapidAPI
+A documented example evaluates a USD 3 verifier and returns `BUY`, a USD 7 rational price ceiling and USD 4 modeled advantage over the best alternative.
 
-[Open Agent Economic Action Gate on RapidAPI](https://rapidapi.com/bono71822/api/agent-economic-action-gate3). Send JSON to `POST /rapidapi/v1/evaluate` using your RapidAPI application key. **Pay per use: $0.002 per request, with no monthly subscription fee.** RapidAPI platform bandwidth fees may also apply.
+[Contract and Apify/RapidAPI/x402 examples](capabilities/CI-002.md) · [Worked demo](CI-002-demo.md)
 
-The gateway integration was tested successfully: HTTP `200 OK`, decision `BUY`, and `max_rational_price: 7` for the documented example. See the [capability documentation](capabilities/CI-002.md) for inputs and operational boundaries.
+### C.I. #03 — Agent Evidence Sufficiency Engine
 
-## Check evidence sufficiency with C.I. #03
+**Problem:** a structured claim needs to meet evidence requirements before an automated workflow treats it as supported.
 
-[Agent Evidence Sufficiency Engine](capabilities/CI-003.md) checks whether supplied structured observations satisfy explicit source-count, source-type, freshness, provenance-reference and confidence requirements. It returns SUPPORTED, CONTRADICTED or INSUFFICIENT with auditable reasons. Exact JSON-value comparison; no semantic fact-checking or independent source authentication. [Worked JSON demo](CI-003-demo.md).
+Checks declared source count, source type, freshness, provenance references and confidence requirements; reports `SUPPORTED`, `CONTRADICTED` or `INSUFFICIENT` with traceable reasons. It uses exact JSON-value comparison, **not** semantic fact-checking or independent source authentication.
 
-## Design Principles
+[Technical documentation](capabilities/CI-003.md) · [Worked JSON demo](CI-003-demo.md)
 
-- Machine-native inputs and outputs
-- Deterministic behavior wherever possible
-- Automatically verifiable results
-- Low marginal execution cost
-- Marketplace-agnostic core
-- Thin adapters for deployment surfaces
-- Versioned contracts and reproducible tests
+### C.I. #04 — Agent State Conflict Resolver
 
-## What We Build
+**Problem:** connected systems report incompatible values for the same entity.
 
-C.I. Factory targets missing infrastructure between autonomous agents and reliable real-world execution: small, machine-native capabilities with explicit contracts and verifiable outputs.
+Applies explicit field-level source authority, freshness and invariants to return a canonical state or escalate unresolved conflicts. Any proposed changes are review-only: the component does **not** write to external systems.
 
-## Explore the Live Capabilities
+[Technical documentation](capabilities/CI-004.md) · [Conflict demo and failure cases](CI-004-demo.md)
 
-Explore the deployed capabilities above. Each public capability page documents its purpose, machine contract, example input, operational boundaries, and deployment status.
+### C.I. #05 — Agent Capability Substitution Resolver
 
-The deployed capabilities can be opened and run directly on Apify from the links above. C.I. #02 is also available through RapidAPI and the direct x402 endpoint.
+**Problem:** a replacement API can look similar to an existing one without satisfying the same task contract.
 
----
+Compares declared schema guarantees, semantic identifiers, permitted effects and paired fixtures. Reports direct substitution, adapter work, required tests, insufficient evidence or incompatibility. It does **not** claim broader equivalence than the provided contract and evidence support.
 
-**C.I. Factory** · Capability Infrastructure for autonomous systems
+[Technical documentation](capabilities/CI-005.md) · [Substitution demo and failure cases](CI-005-demo.md)
 
+### C.I. #06 — Agent Future Obligation Exposure Resolver
+
+**Problem:** a small immediate charge can hide future renewals, deferred fees, cancellation penalties or liquidity commitments.
+
+Separates cash due now, unavoidable commitments, conditional liability, expected continuation scenarios, maximum future exposure and conservative reserves. Unknown or uncapped amounts remain unknown. It uses structured terms and does **not** interpret legal contracts or make payments.
+
+[Technical documentation](capabilities/CI-006.md) · [Liability demo and boundary cases](CI-006-demo.md)
+
+### C.I. #07 — Agent Invariant Coverage Gap Resolver
+
+**Problem:** passing a direct-path test does not prove that delegated, retry or cumulative execution paths have been verified.
+
+Projects structured invariants onto reachable execution paths, matches compatible evidence and reports covered, missing, unreachable and conflicting verification obligations. It does **not** generate or execute tests or certify that an agent is safe.
+
+[Technical documentation](capabilities/CI-007.md) · [Coverage demo and mutation cases](CI-007-demo.md)
+
+## Integrate a capability
+
+**Start with the capability-specific documentation**, not the whole Factory. Each technical page explains the component's purpose, input/output contract, supported behavior, examples, limitations and available distribution channels.
+
+- **Apify:** access the published Actors from the catalog links.
+- **RapidAPI:** open each listed API page for its request format and platform access details.
+- **x402:** invoke the listed payment-enabled JSON API endpoints with an appropriate client. Opening an endpoint in a browser sends a `GET` request and does not perform a paid evaluation. A valid unpaid `POST` may return HTTP `402 Payment Required`; see the relevant capability documentation for supported request and payment flows.
+- **Railway:** the [gateway health endpoint](https://ci-002-production.up.railway.app/health) is a health check, not a capability evaluation.
+
+**Pricing and availability can change by channel**; refer to marketplace listings and API documentation for current terms.
+
+## Engineering principles
+
+- **Small, independent capabilities** with a clearly defined responsibility.
+- **Machine-native, versioned contracts** instead of ambiguous inputs and outputs.
+- **Deterministic behavior where feasible**, with reproducible verification.
+- **Low marginal execution costs** and limited unnecessary dependencies.
+- **Portable core logic**, separated from distribution-specific adapters.
+- **Explicit limits and failure modes**, without unsupported claims of autonomy, correctness or commercial traction.
 
 ## Contact
 
-For integration questions and feedback: [bonometti.work.AI@gmail.com](mailto:bonometti.work.AI@gmail.com).
+For integrations, technical questions or commercial inquiries: [bonometti.work.AI@gmail.com](mailto:bonometti.work.AI@gmail.com).
 
-## Reconcile conflicting states with C.I. #04
+---
 
-**Problem:** several systems report incompatible values for the same entity, and an agent needs an explicit, auditable decision before acting.
-
-[Agent State Conflict Resolver](capabilities/CI-004.md) applies per-field source authority, freshness and declared invariants. It returns a canonical state under that policy or escalates unresolved conflicts. Review-only patches never write to external systems.
-
-[Worked JSON demo and failure cases](CI-004-demo.md).
-
-## Assess a tool replacement with C.I. #05
-
-**Problem:** an agent has a candidate provider, but matching API shapes alone do not establish that switching preserves the task contract.
-
-[Agent Capability Substitution Resolver](capabilities/CI-005.md) compares supported schema guarantees, declared semantic identifiers, allowed effects and supplied paired fixtures. It distinguishes direct substitution, adapter work, required tests, insufficient evidence and incompatibility.
-
-[Worked JSON demo and failure cases](CI-005-demo.md).
-
-## Assess future liabilities with C.I. #06
-
-**Problem:** an agent sees a small immediate price but may also create renewals, deferred charges, cancellation penalties or hold liquidity requirements.
-
-[Agent Future Obligation Exposure Resolver](capabilities/CI-006.md) separates cash now, unavoidable commitments, conditional liability, expected continuing scenario, maximum future exposure and a conservative reserve. Unknown or uncapped liability stays unknown. Structured caller terms only; no contract interpretation or payment execution.
-
-[Worked JSON demo and boundary cases](CI-006-demo.md).
-
-## Find verification gaps with C.I. #07
-
-**Problem:** passing tests for a direct agent action do not show whether delegated, retry or cumulative paths have been checked.
-
-[Agent Invariant Coverage Gap Resolver](capabilities/CI-007.md) projects structured invariants onto reachable graph paths, matches current-signature evidence and returns covered, missing, unreachable and conflicting obligations. It does not generate or execute tests or certify an agent as safe.
-
-[Complete JSON demo and mutation cases](CI-007-demo.md).
+**C.I. FACTORY** · Independent software capabilities for emerging digital ecosystems.

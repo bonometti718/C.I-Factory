@@ -1,8 +1,6 @@
 # Capability Infrastructure Factory
 
-**Deterministic tools for AI citation remediation and autonomous agent decisions.**
-
-Turn supplied AI citation evidence into HTML and JSON-LD remediation plans, or evaluate whether an agent action is worth its cost. Explore the live capabilities below and run them through their marketplace APIs.
+**Explore the live capabilities below and run them through their marketplace APIs.
 
 C.I. Factory is an engineering project focused on identifying emerging infrastructure gaps in agentic systems and turning them into small, deterministic, verifiable capabilities.
 
